@@ -1,22 +1,25 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:habitu/core/app_routes.dart';
+import 'package:habitu/l10n/app_localizations.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 
-  void _redirect() {
-    // toDo: Navigate to onboarding screen
+  void _redirect(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.onboarding);
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF2FBE0),
-      body: _buildLogo(),
+      body: Center(child: _buildLogo(context)),
     );
   }
 
-  Widget _buildLogo() {
+  Widget _buildLogo(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -25,7 +28,7 @@ class SplashScreen extends StatelessWidget {
         AnimatedTextKit(
           animatedTexts: [
             TyperAnimatedText(
-              'Habitu',
+              loc.appTitle,
               textStyle: TextStyle(
                 fontSize: 36,
                 fontWeight: FontWeight.bold,
@@ -34,7 +37,7 @@ class SplashScreen extends StatelessWidget {
               speed: const Duration(milliseconds: 100),
             ),
           ],
-          onFinished: () => _redirect(),
+          onFinished: () => _redirect(context),
         ),
       ],
     );

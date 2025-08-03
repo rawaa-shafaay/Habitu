@@ -1,0 +1,15 @@
+{
+  "@@locale": "en",
+  "appTitle": "Habitu",
+  "login": "Login",
+  "signup": "Sign Up",
+  "onboardTitle1": "Welcome to Habitu",
+  "onboardSubtitle1": "Build habits that stick and grow every day",
+  "onboardTitle2": "Train Your Companion",
+  "onboardSubtitle2": "Complete habits to help your character grow",
+  "onboardTitle3": "Track Your Progress",
+  "onboardSubtitle3": "Visualize streaks, XP, and success over time",
+  "skip": "Skip",
+  "next": "Next",
+  "getStarted": "Get Started"
+}
