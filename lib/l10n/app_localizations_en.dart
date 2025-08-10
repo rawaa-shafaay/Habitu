@@ -42,5 +42,53 @@ class AppLocalizationsEn extends AppLocalizations {
   String get next => 'Next';
 
   @override
-  String get getStarted => 'Get Started';
+  String get getStarted => 'Hello,Register to get started';
+
+  @override
+  String get signInWithEmail => 'Sign in with email';
+
+  @override
+  String get continueAsGuest => 'Continue as a guest';
+
+  @override
+  String get welcomeBackTitle => 'Welcome back';
+
+  @override
+  String get gladToSeeYouAgain => 'Glad to see you, Again';
+
+  @override
+  String get enterUsername => 'Username';
+
+  @override
+  String get enterEmail => 'Email';
+
+  @override
+  String get enterPassword => 'Password';
+
+  @override
+  String get confirmPassword => 'Confirm Password';
+
+  @override
+  String get forgotPassword => 'Forgot Password?';
+
+  @override
+  String get orLoginWith => 'Or Login with';
+
+  @override
+  String get orRegisterWith => 'Or Register with';
+
+  @override
+  String get noAccount => 'Don\'t have an account?';
+
+  @override
+  String get registerNow => 'Register Now';
+
+  @override
+  String get register => 'Register';
+
+  @override
+  String get loginNow => 'Login Now';
+
+  @override
+  String get alreadyHaveAccount => 'Already Have an Account';
 }

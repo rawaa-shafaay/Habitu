@@ -11,5 +11,23 @@
   "onboardSubtitle3": "Visualize streaks, XP, and success over time",
   "skip": "Skip",
   "next": "Next",
-  "getStarted": "Get Started"
+  "getStarted": "Get Started",
+  "signInWithEmail":"Sign in with email",
+  "continueAsGuest": "Continue as a guest",
+  "welcomeBackTitle":"Welcome back",
+  "gladToSeeYouAgain":"Glad to see you, Again",
+  "enterUsername": "Username",
+  "enterEmail": "Email",
+  "enterPassword": "Password",
+  "confirmPassword":"Confirm Password",
+  "forgotPassword": "Forgot Password?",
+  "orLoginWith": "Or Login with",
+  "orRegisterWith": "Or Register with",
+  "noAccount": "Don't have an account?",
+  "registerNow": "Register Now",
+  "register": "Register",
+  "loginNow": "Login Now",
+  "getStarted":"Hello,Register to get started",
+  "alreadyHaveAccount":"Already Have an Account"
+
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:habitu/core/app_routes.dart';
 import 'package:habitu/features/onboarding/models/onboarding_model.dart';
 import 'package:habitu/features/onboarding/views/widgets/dot_indicator.dart';
 import 'package:habitu/features/onboarding/views/widgets/getstarted_button.dart';
@@ -42,10 +43,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   }
 
   void _onSkip() {
-    //todo: navigate to login screen
+    Navigator.pushNamed(context, AppRoutes.authGateway);
   }
+
   void _onGetStarted() {
-    //todo: navigate to login screen
+    Navigator.pushNamed(context, AppRoutes.authGateway);
   }
 
   @override
