@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:habitu/core/app_routes.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -17,13 +18,13 @@ class _SplashScreenState extends State<SplashScreen>
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 1200),
+      duration: const Duration(seconds: 2),
     );
     _fade = CurvedAnimation(parent: _controller, curve: Curves.easeInOut);
 
     _controller.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
-        // TODO: Navigate to home screen
+        Navigator.pushNamed(context, AppRoutes.home);
       }
     });
 
