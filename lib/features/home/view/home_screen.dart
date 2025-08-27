@@ -41,7 +41,7 @@ class HomeScreen extends StatelessWidget {
             Text(loc.create_new_habit),
             const SizedBox(height: 10),
             AppButton(
-              label: 'getStarted',
+              label: loc.get_started,
               backgroundColor: Colors.deepPurple,
               foregroundColor: Colors.white,
               onTap: () {
